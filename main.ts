@@ -6,11 +6,17 @@ let z = false
 basic.forever(function dotyk() {
     if (input.logoIsPressed()) {
         
+        
+        
         if (z == false) {
             z = true
+            x = 0
+            y = 0
             animace_deset()
         } else if (z == true) {
             z = false
+            x = 0
+            y = 0
             animace_sest()
         }
         

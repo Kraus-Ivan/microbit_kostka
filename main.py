@@ -6,11 +6,17 @@ z = False
 def dotyk():
     if input.logo_is_pressed():
         global z
+        global x 
+        global y
         if z == False:
             z = True
+            x = 0
+            y = 0
             animace_deset()
         elif z == True:
             z = False
+            x = 0
+            y = 0
             animace_sest()
 basic.forever(dotyk)
 def tlacitkoA():
